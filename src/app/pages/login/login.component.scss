@@ -1,0 +1,41 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+/* styles.css vagy a komponens saját CSS fájlja */
+
+.custom-button {
+  border-radius: 20px; /* Kerekítési sugár */
+  margin: 5px; /* Margó */
+  background-color: black; /* Fekete háttérszín */
+  color: white; /* Fehér szöveg */
+}
+
+.custom-button:hover {
+  background-color: #333; /* Sötétebb háttérszín hover esetén */
+}
+.mat-raised-button{
+  border-radius: 20px; /* Kerekítési sugár */
+  margin: 5px; /* Margó */
+  background-color: black; /* Fekete háttérszín */
+  color: white; /* Fehér szöveg */
+
+
+}

@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="app-navbar">
+  <div fxLayout="column" fxLayoutAlign="start center" class="navbar-content">
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <span class="logo">FILMOGRÁF</span>
+    </div>
+  </div>
+    <!-- Links Container -->
+    <div class="links-container" fxLayout="column" fxLayoutAlign="start ">
+      <a mat-button *ngIf="!(loggedInUser)" routerLink="/login">Login</a>
+      <a mat-button *ngIf="(loggedInUser)" routerLink="/login" (click)="logout()">Logout</a>
+    </div>
+  
+</mat-toolbar>

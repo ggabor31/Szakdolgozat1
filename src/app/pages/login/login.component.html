@@ -1,0 +1,27 @@
+<div class="login-container" fxLayout="column" fxLayoutAlign="center center">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="login-form" (ngSubmit)="login()">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" name="email" [formControl]="email" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" name="password" [formControl]="password" required>
+        </mat-form-field>
+        <div class="button-container">
+          <button mat-raised-button color="primary" type="submit" class="custom-button">Bejelentkezés</button>
+          <button mat-raised-button color="primary" (click)="loginAsGuest()"class="custom-button">Folytatás vendégként</button>
+        </div>
+      </form>
+      <div class="register-text">
+        Ha nincs még fiókod, akkor
+        <button mat-raised-button color="primary" (click)="navigateToRegistration()"class="custom-button">Regisztrálj</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

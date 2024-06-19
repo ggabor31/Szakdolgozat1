@@ -1,0 +1,45 @@
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 24px; 
+}
+.logo-container {
+  margin-bottom: 50px; /* Térköz a logó és a linkek között */
+}
+.app-navbar {
+  height: 100vh; /* A teljes magasságra állítja a navbar-t */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a.active-link {
+  font-weight: bold;
+}
+.app-navbar {
+  background-color: #1976d2; 
+  color: white; 
+}
+.navbar-content {
+  width: 100%; 
+}
+.links-container {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+a[mat-button] {
+  display: block; 
+  margin-bottom: 16px; 
+  background-color: black; 
+  border-radius: 30px; 
+}
